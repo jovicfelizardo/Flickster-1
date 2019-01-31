@@ -18,6 +18,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="285dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="A Star is Born"
@@ -25,14 +26,16 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tvOverview"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPoster"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="296dp"
+        android:layout_width="278dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
         android:text="RecyclerView.ItemAnimator will animate ViewGroup modifications such as add/delete/select that are notified to adapter. DefaultItemAnimator can be used for basic default animations and works quite well. See the section of this guide for more information."
         android:textColor="@color/textGrey"
         app:layout_constraintEnd_toEndOf="parent"
